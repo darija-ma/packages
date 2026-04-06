@@ -1,0 +1,15 @@
+{
+  "name": "packages",
+  "private": true,
+  "license": "MIT",
+  "packageManager": "bun@1.3.11",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "bun run --cwd packages/humanize-duration build",
+    "check": "bun run --cwd packages/humanize-duration check",
+    "test": "bun run --cwd packages/humanize-duration test",
+    "typecheck": "bun run --cwd packages/humanize-duration typecheck"
+  }
+}
